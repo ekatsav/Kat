@@ -1,0 +1,51 @@
+* {
+    box-sizing: border-box; /*This is what makes the padding not break the clearfix!!!*/
+}
+.img {
+    width: 33.33%;
+    float: left;
+    padding: 5px;
+}
+.clearfixtest::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.flexboxtest {
+    display:flex;
+    flex-wrap:nowrap; /*im gonna be so fr idk what this does here... window resize??  Yeah it was window resize so it doesn't pop outta the dang box*/
+    background-color:aquamarine;
+    margin: 30px;
+}
+.flexboxtest .box {
+    background-color: aqua;
+    width: 50%;
+    margin: 10px;
+    text-align:center;
+    line-height: 1em;
+    font-size: 30px;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+.dropdowncontent {
+    display: none;
+    position: absolute;
+    background-color: cadetblue;
+    min-width: 150px;
+    box-shadow: 0px 8px 16px rgba(75, 84, 204, 0.5);
+    padding: 12px, 16px;
+    z-index: 1;
+    text-align: center;
+}
+
+.dropdown:hover .dropdowncontent {
+    display: inline-block;
+}
+@media screen and (max-width:600px) {
+    .img {
+      width: 100%;
+    }

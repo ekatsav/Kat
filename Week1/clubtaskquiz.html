@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+
+<html lang="en-ge">
+    <head>
+        <title>Quiz :D</title>
+        <link rel="stylesheet" href="clubtaskstyle.css">
+        <meta charset="UTF-8">
+        <meta name="description" content="Madlab week 1 HTML formatting task">
+        <meta name="keywords" content="HTML, test, learning">
+        <meta name="viewport" content="width=device-width, intial-scale=1.0">
+        <link rel="icon" type="image/png" href="clubtaskimages\cat.png">
+    </head>
+
+    <body>
+        <header>
+            <nav>
+                <ul>
+                    <li><a href="clubtask.html" target="_self" >Home</a></li>
+                    <li><a href="clubtaskmembers.html" target="_self" >Members</a></li> <!--add links later-->
+                    <li><a href="clubtaskgallery.html" target="_self" >Gallery</a></li>
+                    <li><a href="clubtaskquiz.html" target="_self" >Quiz</a></li>
+                    <li><a href="clubtasklogin.html" target="_self" >Login/Signup</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <section class="quiz">
+            <h2>Fun Quiz for the Whole Family</h2>
+            <form action="submit_form.html" method="post">
+                <fieldset>
+                    <legend>Fave type of game?</legend>
+                    <!--FOR and ID match, NAME matches all answers in the question(favgame in this scenario). These labels are all case sensitive!!-->
+
+                    <label for="rpgs">RPGs</label>
+                    <input type="radio" id="rpgs" name="favgame" value="rpgs">
+                    <label for="mobas">MOBAs</label>
+                    <input type="radio" id="mobas" name="favgame" value="mobas">
+                    <label for="mmos">MMOs</label>
+                    <input type="radio" id="mmos" name="favgame" value="mmos">
+                    <label for="other">Other</label>
+                    <input type="radio" id="othergames" name="favgame" value="othergames">
+                </fieldset>
+
+                <fieldset>
+                    <legend>Fave type of music?</legend>
+
+                    <label for="pop">Pop</label>
+                    <input type="radio" id="pop" name="music" value="pop">
+                    <label for="rock">Rock</label>
+                    <input type="radio" id="rock" name="music" value="rock">
+                    <label for="metal">Metal</label>
+                    <input type="radio" id="metal" name="music" value="metal">
+                    <label for="other">Other</label>
+                    <input type="radio" id="othermusic" name="music" value="other">
+                </fieldset>
+                <fieldset>
+                    <legend>Fave movie genre?</legend>
+
+                    <label for="romance">Romance</label>
+                    <input type="radio" id="romance" name="movie" value="romance">
+                    <label for="action">Action</label>
+                    <input type="radio" id="action" name="movie" value="action">
+                    <label for="horror">Horror</label>
+                    <input type="radio" id="horror" name="movie" value="horror">
+                    <label for="other">Other</label>
+                    <input type="radio" id="othermovies" name="movie" value="other">
+                </fieldset>
+                <button type="submit" id="quizsubmit">See your results!!</button>
+            </form>
+        </section>
+
+        <footer>
+            <p>Placeholder footer, ahah, copyright!!</p>
+        </footer>
+    </body>
+</html>
+
+</doctype>

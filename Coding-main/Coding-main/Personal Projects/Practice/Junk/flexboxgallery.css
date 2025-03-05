@@ -1,0 +1,36 @@
+body {
+    background-color: black;
+    color: white;
+}
+
+h1 {
+    text-align: center;
+}
+
+.gallery{
+    text-align: center;
+}
+
+.galleryInside {
+    display: flex;
+    margin: 1em;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.galleryInside img {
+    width: 33%;
+    padding: 2%;
+}
+
+img {
+    max-width: 20em;
+    min-width: 15em;
+    transition: transform 0.3s ease;
+}
+
+img:hover {
+    opacity: 70%;
+    transform: scale(1.2);
+}

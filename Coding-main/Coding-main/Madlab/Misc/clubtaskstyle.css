@@ -1,0 +1,103 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgba(183, 121, 237, 0.8);
+    margin: 0;
+    color: white;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #670f9a;
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+  
+  li {
+    float: left;
+  }
+  
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+
+aside {
+    float: left;
+    padding: 20px 100px 10px 10px;
+    border: 1px dashed pink;
+    background-color:rgba(87, 7, 248, 0.8);
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    width: 100px;
+    height: 150vh;
+    text-align: center;
+}
+
+#mainbody {
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 70px;
+    max-width: 600px;
+    padding: 10px;
+    color: white;
+    text-align: center;
+    border: 1px solid black;
+    border-radius: 10px;
+    background-color:rgba(135, 42, 216, 0.5);
+}
+
+img {
+    height: 200px;
+    width: 200px;
+    margin: auto;
+    display: flex;
+}
+
+.form {
+    color:white;
+    margin: auto;
+    margin-top:30px;
+    max-width: 500px;
+    padding: 10px;
+}
+
+.quiz {
+    margin: auto;
+    margin-top: 30px;
+    max-width: 500px;
+    padding: 10px;
+}
+
+#quizsubmit {
+    margin: 10px;
+    padding:10px;
+    background-color: rgb(249, 102, 249);
+    color: white;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+label {
+    padding: 5px;
+    display: inline-block;
+}
+
+footer {
+    margin-top: 50px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: rgba(167, 36, 193, 1);
+    text-align: center;
+}

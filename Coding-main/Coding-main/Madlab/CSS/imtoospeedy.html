@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<!--CSS dump and practice bin-->
+
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="Cssoverlaywoooo.css">
+        <title>This is all a test</title>
+    </head>
+
+    <body>
+        <h1>I'm going to do fancy stuff to this header</h1>
+
+        <p id="para1" class="para">This is a test <a href="https://dictionary.cambridge.org/dictionary/english/paragraph" target="_blank">paragraph</a>, para1</p
+        <br>
+        <p id="para2" class="para">This is a test paragraph, para2. <br> Also look at this cool thing my friend <a href="ornispam2.html">made 🌙</a></p>
+        <img src="CSSimg/kitty.gif" height="100px" width="100px" class="center">
+
+        <div id="buttoncontainer">
+            <button id="gaybutton" class="button">Click this if ur gay</button>
+
+            <script>
+                const button = document.querySelector(".button");
+
+                button.addEventListener("click", (e)=> {
+                  e.preventDefault;
+                  button.classList.add("animate");
+
+                  setTimeout(() => {
+                    button.classList.remove("animate");
+                  }, 600);
+                });
+            </script>
+        </div>
+
+        <div id="list">
+         <h2> This is going to be a list</h2>
+          <ul>
+            <li>Apples</li>
+            <li>Oranges</li>
+            <li>Strawberries</li>
+            <li>Cherries</li>
+          </ul>
+        </div>
+
+    </body>
+</html>

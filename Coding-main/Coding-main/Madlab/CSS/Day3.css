@@ -1,0 +1,74 @@
+body {
+    background-color:darkslategray;
+    background-image: url(CSSimg/tumblr_a2ad65a327981dd82f681115d55ea3ab_d0f37c7f_400.webp);
+    color:white;
+    font-family: "Alegreya SC", Arial, Helvetica, sans-serif;
+    padding: 10px;
+}
+
+#innerbox {
+    max-width:600px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color:rgba(8, 83, 55, 0.8);
+    border-radius: 10px;
+    text-align: center;
+    border: solid 5px rgba(115, 25, 237, 0.4);
+    padding: 3%;
+}
+p {
+    text-decoration-line: line-through;
+    text-decoration-color: rgb(255, 255, 255);
+    text-decoration-thickness: 2px;
+    text-decoration-style: wavy;
+    text-transform:capitalize;
+    font-size: 1.2em;
+}
+a:link {
+    color:white;
+    text-decoration: none;
+    border: solid white 1px;
+    display: inline-block;
+}
+a:hover {
+    background-color: purple;
+    cursor: crosshair;
+}
+h1 {
+    text-shadow:0px 0px 20px #eb26ee;
+    font-style: oblique;
+}
+ul {
+    list-style-position: inside;
+}
+table, tr, td {
+    border: 1px solid;
+    width: 100%;
+    border-collapse: collapse;
+    text-align: center;
+    table-layout: fixed;
+}
+tr, td {
+    padding: 1%;
+}
+td:hover {
+    background-color: paleturquoise;
+}
+tr:nth-child(even) {
+    background-color:rgba(149, 241, 237, 0.3);
+}
+.Imagetest {
+    margin: 10% auto;
+    width: 200px;
+    height: 300px;
+    background-image: url(leaf.png);
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.Imagetesttext {
+    text-align: center;
+    font-size: 1.2em;
+    font-weight:700;
+}

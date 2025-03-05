@@ -1,0 +1,125 @@
+
+/*I unironically just love yapping*/
+body {
+    align-items: center;
+    justify-content: center;
+    max-width: 95%;
+    background-color: rgba(1, 44, 14, 0.7);
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+h1 {
+    text-align:center;
+    color:indigo;
+    background-color: rgba(1, 44, 14, 0.3);
+    margin: 2% 5%;
+}
+h2 {
+    text-align:center;
+}
+#para1 {
+    text-align: center;
+    color: white;
+}
+#para2 {
+    text-align: center;
+    color:midnightblue;
+}
+.para {
+    font-size:large;
+}
+img {
+    margin: 3%;
+}
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+#list {
+    background-image: url("CSSimg/leaf.png");
+    background-repeat: no-repeat;
+    background-size: 1600px 800px;
+    border:2px solid rgba(100, 50, 80, 0.4);
+    border-width: thick;
+    border-radius:10px;
+    color:white;
+    margin: 0% 10%;
+    padding: 25px 50px;
+}
+#buttoncontainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 2%;
+}
+.button {
+    color: white;
+    position: relative;
+    padding: 10px 12px;
+    border-radius:5px;
+    background-color:rgb(0, 0, 0);
+    font-size:20px;
+    font-family:"Comic Sans MS";
+    font-weight: 500;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+.button:active {
+    transform: scale(0.9)
+}
+.button::before,
+.button::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 100%;
+    width: 150%;
+    z-index: -1;
+    background-repeat: no-repeat;
+}
+.button.animate::before {
+    top: -70%;
+    background-image: radial-gradient(circle, purple 20%, transparent 20%),
+     radial-gradient(circle, transparent 20%, purple 20%, transparent 30%),
+     radial-gradient(circle, purple 20%, transparent 20%),
+     radial-gradient(circle, transparent 10%, purple 15%, transparent 20%),
+     radial-gradient(circle, purple 20%, transparent 20%),
+     radial-gradient(circle, purple 20%, transparent 20%),
+     radial-gradient(circle, purple 20%, transparent 20%),
+     radial-gradient(circle, purple 20%, transparent 20%);
+    background-size: 10% 10%, 20% 20%, 15% 15%, 20% 20%, 18% 18%, 10% 10%, 15% 15%, 10% 10%, 18% 18%;
+    background-position: 5% 90%, 10% 90%, 10% 90%, 15% 90%, 25% 90%, 25% 90%, 40% 90%, 55% 90%, 70% 90%;
+    animation: topBubbles 0.6s ease-in-out infinite;
+}
+@keyframes topBubbles {
+    50% {
+        background-position: 0% 80%, 0% 20%, 10% 40%, 20% 0%, 30% 30%, 22% 50%, 50% 50%, 65% 20%, 90% 30%;
+    }
+    100% {
+        background-position: 0% 70%, 0% 10%, 10% 30%, 20% -10%, 30% 20%, 22% 40%, 50% 40%, 65% 10%, 90% 20%;
+        background-size: 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%;
+    }
+}
+.button.animate::after {
+    bottom: -70%;
+    background-image: radial-gradient(circle, purple 20%, transparent 20%),
+    radial-gradient(circle, transparent 20%, purple 20%, transparent 30%),
+    radial-gradient(circle, purple 20%, transparent 20%),
+    radial-gradient(circle, purple 20%, transparent 20%),
+    radial-gradient(circle, purple 20%, transparent 20%),
+    radial-gradient(circle, purple 20%, transparent 20%),
+    radial-gradient(circle, purple 20%, transparent 20%);
+    background-size: 15% 15%, 20% 20%, 18% 18%, 20% 20%, 15% 15%, 20% 20%, 18% 18%;
+    background-position: 10% 0%, 30% 10%, 55% 0%, 70% 0%, 85% 0%, 70% 0%, /*We stay silly :3*/70% 0%;
+    animation: bottomBubbles 0.6s ease-in-out infinite;
+}
+@keyframes bottomBubbles {
+    50% {
+        background-position: 0% 80%, 20% 80%, 45% 60%, 60% 100%, 75% 70%, 95% 60%, 105% 0%;
+    }
+    100% {
+        background-size: 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%;
+    }
+    }

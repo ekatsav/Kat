@@ -1,0 +1,21 @@
+#flexbox {
+    display: flex;
+    margin: 20px;
+    border: 2px solid black;
+}
+#flexbox div {
+    width: 33%;
+    border: 1px solid black;
+    padding: 5px;
+}
+
+#grid {
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+}
+
+#grid div {
+    border: 1px solid black;
+    padding: 2%;
+    text-align: center;
+}
