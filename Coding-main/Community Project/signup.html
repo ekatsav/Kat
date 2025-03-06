@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+
+<html lang="en-gb">
+
+<head>
+    <title>Join Us</title>
+    <link rel="icon" type="image/png" href="communitypojectimages\ratjam.gif">
+    <link rel="stylesheet" href="communityprojectstyle.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial=scale=1.0">
+    <meta name="description" content="sign-up page for the rat community, all about and for rats">
+    <meta name="keywords" content="rats, community, signup">
+</head>
+
+<body>
+    <div class="content">
+        <header class="header">
+            <h3>Join the Rat Revolution Today</h3>
+        </header>
+        <nav>
+            <ul>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="staff.html">Staff</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="communityprojectindex.html" class="active">Home</a></li>
+            </ul>
+        </nav>
+        <main>
+            <div class="container">
+                <h2>Sign up!</h2>
+                <section class="form">
+                    <form action="submit_form.html" method="post">
+                        <fieldset>
+                            <legend>Join Us</legend>
+                            <label for="name">Name:</label>
+                            <input type="text" id="name" name="name" required>
+                            <br>
+                            <label for="email">Email:</label>
+                            <input type="email" id="email" name="email2" required>
+                            <br>
+                            <label for="password">Password:</label>
+                            <input type="password" id="password2" name="password" required>
+                            <br>
+                            <label for="confirmpassword">Confirm Password:</label>
+                            <input type="password" id="password3" name="confirmpassword" required>
+                            <br>
+                            <label for="animals">Your favourite animal:</label>
+                            <select id="animal" name="animals">
+                                <option value="cat">Cats</option>
+                                <option value="dog">Dogs</option>
+                                <option value="rat">Rats!! >:D</option>
+                                <option value="otheranimal">Other</option>
+                            </select>
+                            <br>
+                            <label for="comments">Tell us about yourself:</label>
+                            <textarea id="comments" name="comments"></textarea> <!--Never use placeholder text instead of a label as it disappears, and also cannot be read by screenreaders so poses an accessibility issue!!-->
+                            <br>
+                            <button type="submit">Sign Up</button>
+                        </fieldset>
+                    </form>
+                </section>
+                <div class="signupdirect">
+                    <p>Otherwise, <a href="login.html">login</a> here!</p>
+                </div>
+            </div>
+        </main>
+        <footer class="footer">
+            Art cred links
+        </footer>
+    </div>
+</body>
+</html>
