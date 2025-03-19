@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+
+<html lang="en-gb">
+
+<head>
+    <title>Just Literal Rats</title>
+    <link rel="icon" type="image/png" href="communitypojectimages\ratjam.gif">
+    <link rel="stylesheet" href="communityprojectstyle.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial=scale=1.0">
+    <meta name="description" content="home page for the rat community, all about and for rats">
+    <meta name="keywords" content="rats, community">
+</head>
+
+<body>
+    <div class="content">
+        <header class="header">
+            <h3>Join the Rat Revolution Today</h3>
+        </header>
+        <nav>
+            <ul>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="quiz.html">Quiz</a></li>
+                <li><a href="staff.html">Staff</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="communityprojectindex.html" class="active">Home</a></li>
+            </ul>
+        </nav>
+        <main class="grid-container">
+
+            <section class="quiz">
+                <h2>Are you the right rat for the movement?</h2>
+                <form name="ratquiz" action="submitquiz.html" method="post">
+                    <fieldset>
+                        <legend>What do you value most?</legend>
+                        <!--FOR and ID match, NAME matches all answers in the question(favgame in this scenario). These labels are all case sensitive!!-->
+    
+                        <label for="Collective">The Collective</label>
+                        <input type="radio" id="collective" name="value" value="collective">
+                        <label for="unity">Unity</label>
+                        <input type="radio" id="unity" name="value" value="unity">
+                        <label for="comrades">Comrades</label>
+                        <input type="radio" id="comrades" name="value" value="comrades">
+                        <label for="other">Other</label>
+                        <input type="radio" id="othervalue" name="value" value="other" disabled>
+                    </fieldset>
+    
+                    <fieldset>
+                        <legend>What do you bring?</legend>
+    
+                        <label for="pop">Teamwork</label>
+                        <input type="radio" id="pop" name="music" value="pop">
+                        <label for="rock">Harmony</label>
+                        <input type="radio" id="rock" name="music" value="rock">
+                        <label for="metal">Collaboration</label>
+                        <input type="radio" id="metal" name="music" value="metal">
+                        <label for="metal">Unity</label>
+                        <input type="radio" id="metal" name="music" value="metal">
+                        <label for="metal">Unity</label>
+                        <input type="radio" id="metal" name="music" value="metal">
+                        <label for="metal">Unity</label>
+                        <input type="radio" id="metal" name="music" value="metal">
+                        <label for="other">Other</label>
+                        <input type="radio" id="othermusic" name="music" value="other" disabled>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Who do you trust?</legend>
+    
+                        <label for="revolution">The Revolution</label>
+                        <input type="radio" id="revolution" name="trust" value="revolution">
+                        <label for="union">The Union</label>
+                        <input type="radio" id="union" name="trust" value="union">
+                        <label for="movement">The Movement</label>
+                        <input type="radio" id="movement" name="trust" value="movement">
+                        <label for="us1">Us</label>
+                        <input type="radio" id="us1" name="trust" value="us1">
+                        <label for="us2">Us</label>
+                        <input type="radio" id="us2" name="trust" value="us2">
+                        <label for="us3">Us</label>
+                        <input type="radio" id="us3" name="trust" value="us3">
+                        <label for="other">Other</label>
+                        <input type="radio" id="othertrust" name="trust" value="othertrust" disabled>
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>What is your aim in rife (Rat Life)?</legend>
+    
+                        <label for="union">Joining the Union</label>
+                        <input type="radio" id="union" name="aim" value="union">
+                        <label for="collective">Becoming one of the collective</label>
+                        <input type="radio" id="collective" name="aim" value="collective">
+                        <label for="becoming">Becoming one of Us</label>
+                        <input type="radio" id="becoming" name="aim" value="becoming">
+                        <label for="us1">One of Us</label>
+                        <input type="radio" id="us1" name="aim" value="us1">
+                        <label for="us2">One of Us</label>
+                        <input type="radio" id="us2" name="aim" value="us2">
+                        <label for="us3">One of Us</label>
+                        <input type="radio" id="us3" name="aim" value="us3">
+                        <label for="other">Other</label>
+                        <input type="radio" id="otheraim" name="aim" value="otheraim" disabled>
+                    </fieldset>
+                    <button type="submit" id="quizsubmit">See your results!!</button>
+                </form>
+            </section>
+        </main>
+        <footer class="footer">
+            Art cred links
+        </footer>
+    </div>
+</body>
+</html>
